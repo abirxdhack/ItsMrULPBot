@@ -1,0 +1,9 @@
+pyrofork
+tgcrypto
+aiofiles
+pymongo
+aiohttp
+asyncio
+speedtest-cli
+psutil
+pytz
