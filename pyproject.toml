@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ItsMrULPBot"
+version = "2.3.68"
+description = "A powerful async Telegram bot for searching, extracting and processing ULP databases"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [
+    { name = "ISmartCoder", url = "https://t.me/ISmartCoder" }
+]
+keywords = ["telegram", "bot", "telethon", "ulp", "combo"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: AsyncIO",
+]
+dependencies = [
+    "telethon",
+    "uvloop",
+]
+
+[project.scripts]
+ItsMrULPBot = "main:asyncio.run(run_bot())"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "modules*", "helpers*", "utils*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"]
+
+[project.urls]
+"Homepage" = "https://t.me/abirxdhackz"
+"Bug Tracker" = "https://t.me/ISmartCoder"
+"Updates Channel" = "https://t.me/abirxdhackz"
